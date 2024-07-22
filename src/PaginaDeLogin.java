@@ -14,19 +14,14 @@ public class PaginaDeLogin {
     while (!"0".equals(acao));
   }
 
-
   public String MenuDeLogin(){
 
     Scanner sc = new Scanner(System.in);
-
-
 
     System.out.println("Olá");
     System.out.println(" Seja Bem Vindo");
     System.out.println("O que Deseja Fazer");
     System.out.println("\n");
-
-
 
     System.out.println("\n");
     System.out.println("0 - Sair");

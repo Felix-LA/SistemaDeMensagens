@@ -8,7 +8,6 @@ public class Cadastro {
 
   Scanner sc = new Scanner(System.in);
 
-
   public void cadastro(){
     System.out.println("Informe o Nome: ");
     String Nome = sc.nextLine();
@@ -19,10 +18,13 @@ public class Cadastro {
     System.out.println("Informe um Apelido: ");
     String Apelido = sc.nextLine();
 
+    System.out.println("Informe uma senha: ");
+    int Senha = sc.nextInt();
 
-    usuarios.setNameUsuario(Nome);
-    usuarios.SetSobrenomeUsuario(Sobrenome);
-    usuarios.SetApelidoUsuario(Apelido);
+    usuarios.setNome(Nome);
+    usuarios.setSobrenome(Sobrenome);
+    usuarios.setApelido(Apelido);
+    usuarios.setSenha(Senha);
   }
 
 }

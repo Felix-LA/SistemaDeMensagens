@@ -1,29 +1,36 @@
 package entity;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Usuarios {
 
-  private String NameUsuario;
-  private String SobrenomeUsuario;
-  private String ApelidoUsuario;
-  private Long Id;
-  private String Mensagem;
-  private String Amigos;
+  private String nome;
+  private String sobrenome;
+  private String apelido;
+  private Long id;
+  private List<String> mensagem = new ArrayList<>();
+  private List<String> amigos = new ArrayList<>();
+  private int senha;
 
-  public String getNameUsuario(){return this.NameUsuario = NameUsuario;}
-  public void setNameUsuario(String NameUsuario) {this.NameUsuario = NameUsuario;}
+  public Long getId(){return this.id = id;}
+  public void setId(Long id) {this.id = id;}
 
-  public String getSobrenomeUsuario(){return this.SobrenomeUsuario = SobrenomeUsuario;}
-  public void SetSobrenomeUsuario(String SobrenomeUsuario) {this.SobrenomeUsuario = SobrenomeUsuario;}
+  public String getNome(){return this.nome = nome;}
+  public void setNome(String nome) {this.nome = nome;}
 
-  public String getApelidoUsuario(){return this.ApelidoUsuario = ApelidoUsuario;}
-  public void SetApelidoUsuario(String ApelidoUsuario) {this.ApelidoUsuario = ApelidoUsuario;}
+  public String getSobrenome(){return this.sobrenome = sobrenome;}
+  public void setSobrenome(String sobrenome) {this.sobrenome = sobrenome;}
 
-  public Long getId(){return this.Id = Id;}
-  public void SetId(Long Id) {this.Id = Id;}
+  public String getApelido(){return this.apelido = apelido;}
+  public void setApelido(String apelido) {this.apelido = apelido;}
 
-  public String getMensagem(){return this.Mensagem = Mensagem;}
-  public void SetMensagem(String Mensagem) {this.Mensagem = Mensagem;}
+  public List getMensagem(){return this.mensagem = mensagem;}
+  public void setMensagem(List mensagem) {this.mensagem = mensagem;}
 
-  public String getAmigos(){return this.Amigos = Amigos;}
-  public void SetAmigos(String Amigos) {this.Amigos = Amigos;}
+  public List getAmigos(){return this.amigos = amigos;}
+  public void setAmigos(List amigos) {this.amigos = amigos;}
+
+  public int getSenha() {return this.senha = senha;}
+  public void setSenha(int senha) {this.senha =  senha;}
 }
