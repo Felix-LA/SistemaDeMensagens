@@ -14,21 +14,16 @@ public class PaginaDeLogin {
     while (!"0".equals(acao));
   }
 
-
   public String MenuDeLogin(){
 
     Scanner sc = new Scanner(System.in);
     //TODO Espaço desnecessário de linhas brancas, deletar pelo menos duas linhas brancas
-
-
 
     System.out.println("Olá");
     System.out.println(" Seja Bem Vindo");
     System.out.println("O que Deseja Fazer");
     System.out.println("\n");
     //TODO Espaço desnecessário de linhas brancas, deletar pelo menos duas linhas brancas
-
-
 
     System.out.println("\n");
     System.out.println("0 - Sair");

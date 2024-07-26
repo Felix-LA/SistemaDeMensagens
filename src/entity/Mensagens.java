@@ -10,15 +10,17 @@ public class Mensagens {
   public String RespostasMensagens;
   //TODO Espaço desnecessário de linhas brancas, deletar pelo menos uma linha branca
 
+  public String getMensagemOriginal(){return mensagemOriginal;}
+  public void setMensagemOriginal(String mensagemOriginal) {
+    this.mensagemOriginal = mensagemOriginal;}
 
-  public String getMensagemOriginal(){return MensagemOriginal;}
-  public void setMensagemOriginal(String mensagemOriginal) {MensagemOriginal = mensagemOriginal;}
+  public String getApelidoUsuario() {return apelidoUsuario;}
+  public void setApelidoUsuario(String apelidoUsuario) {
+    this.apelidoUsuario = apelidoUsuario;}
 
-  public String getApelidoUsuario() {return ApelidoUsuario;}
-  public void setApelidoUsuario(String apelidoUsuario) {ApelidoUsuario = apelidoUsuario;}
-
-  public String getRespostasMensagens() {return RespostasMensagens;}
-  public void setRespostasMensagens(String respostasMensagens) {RespostasMensagens = respostasMensagens;}
+  public String getRespostasMensagem() {return respostasMensagem;}
+  public void setRespostasMensagem(String respostasMensagem) {
+    this.respostasMensagem = respostasMensagem;}
 
 
 }

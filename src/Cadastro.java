@@ -8,7 +8,6 @@ public class Cadastro {
 
   Scanner sc = new Scanner(System.in);
 
-  //TODO Voce precisa de uma senha para os usuarios e precisa salvar esses usuario no banco de dados
   public void cadastro(){
     System.out.println("Informe o Nome: ");
     String Nome = sc.nextLine();
@@ -18,12 +17,14 @@ public class Cadastro {
 
     System.out.println("Informe um Apelido: ");
     String Apelido = sc.nextLine();
-    //TODO Espaço desnecessário de linhas brancas, deletar pelo menos uma linha branca
 
+    System.out.println("Informe uma senha: ");
+    int Senha = sc.nextInt();
 
-    usuarios.setNameUsuario(Nome);
-    usuarios.SetSobrenomeUsuario(Sobrenome);
-    usuarios.SetApelidoUsuario(Apelido);
+    usuarios.setNome(Nome);
+    usuarios.setSobrenome(Sobrenome);
+    usuarios.setApelido(Apelido);
+    usuarios.setSenha(Senha);
   }
 
 }

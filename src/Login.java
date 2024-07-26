@@ -1,6 +1,5 @@
 import entity.Usuarios;
 
-import java.awt.*;
 import java.util.Scanner;
 
 public class Login {
@@ -14,20 +13,12 @@ public class Login {
   public void login(){
     Usuarios usuarios = new Usuarios();
 
-    System.out.println("Nome: ");
-    String Nome = sc.nextLine();
-
-    System.out.println("Sobrenome: ");
-    String Sobrenome = sc.nextLine();
-
     System.out.println("Apelido: ");
     String Apelido = sc.nextLine();
     //TODO Espaço desnecessário de linhas brancas, deletar pelo menos uma linha branca
 
-
-    usuarios.setNameUsuario(Nome);
-    usuarios.SetSobrenomeUsuario(Sobrenome);
-    usuarios.SetApelidoUsuario(Apelido);
+    System.out.println("Senha: ");
+    int Senha = sc.nextInt();
 
     menu.menu();
 
